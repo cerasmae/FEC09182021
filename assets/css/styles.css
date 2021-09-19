@@ -1,0 +1,145 @@
+main {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        background-color: lightgrey;
+        font-family: "Lucida Console", "Courier New", monospace;
+        padding: 1em;
+        cursor: url('../images/cursor.svg'), auto;
+    }
+
+    main {
+        background-color: white;
+        padding: 1em 1em 5em 1em;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width: 451px) {
+    body {
+        background-color: #f3f5fc;
+        font-family: "Lucida Console", "Courier New", monospace;
+        padding: 3em;
+        cursor: url('../images/cursor.svg'), auto;
+    }
+
+    main {
+        background-color: white;
+        padding: 2em 2em 6em 2em;
+        border-radius: 10px;
+    }
+
+    nav {
+        font-size: smaller;
+        display: block;
+    }
+
+    .nav-menu {
+        order: 1;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-email {
+        order: 2;
+    }
+
+    .profile-header > h1 {
+        font-size: 40px;
+        font-family: "Tahoma", sans-serif;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    body {
+        background-color: #faecc6;
+    }
+
+    nav {
+        font-size: smaller;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-menu {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        width: 35%;
+    }
+
+    .profile-header > h1 {
+        font-size: 60px;
+        font-family: "Tahoma", sans-serif;
+    }
+}
+
+    .nav-email {
+        list-style-type: none;
+    }
+
+    .nav-email > li {
+        background-image: url(../images/email_black_18dp.svg);
+        background-repeat: no-repeat;
+        padding-left: 3em;
+        padding-top: 2.5px;
+    }
+
+    .nav-menu > li {
+        display: inline;
+    }
+
+    .menu-link:hover {
+        font-weight: bold;
+        font-size: unset;
+        cursor: pointer;
+    }
+
+    .section-profile {
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    .profile-image > img {
+        border-radius: 50%;
+        max-width: 175px;
+    }
+
+    .profile-header {
+        margin-top: 1.5em;
+        padding: 0 20% 0 20%;
+    }
+
+    .profile-header > h3 {
+        margin: 0;
+        font-weight: unset;
+    }
+
+    .text-bold {
+        font-weight: bold;
+    }
+
+    .section-connect {
+        text-align: center;
+        margin-top: 6em;
+    }
+
+    .connect-button {
+        color: white;
+        background-color: black;
+        font-size: small;
+    }
+
+    .button-link {
+        padding: 2em;
+        border-radius: 30px;
+    }
+
+    .button-link:hover {
+        color: #faecc6;
+        padding: 2.1em;
+    }
+}
